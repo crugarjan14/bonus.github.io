@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Visualization Dashboard Bonus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: #696969;" href="p_index.html">Pyber Ride Sharing Analysis</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Analysis
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="ride_sharing.html">Ride Sharing</a>
+              <a class="dropdown-item" href="total_rides.html">Total Ride Sharing</a>
+              <a class="dropdown-item" href="total_fares.html">Total Fares</a>
+              <a class="dropdown-item" href="total_drivers.html">Total Drivers</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="graphs.html">Graphs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <!-- Left box  -->
+        <div class="box">
+          <h3 class="title">Total Rides by City Type</h3>
+          <hr>
+          <img src="Fig2_RidesbyCityType.png" alt="Humidity">
+          <p>The Total Rides by City Type Pie is in a proportional degree with the Total Fares by City Type Pie as the urban section understandably captured the biggest share at 68.4 percent, followed by suburban at once again less than half of the highest rate at 26.3 percent and rural claiming the petite portion at 5.3 percent. This goes back to the key factor that urban areas offer more residents signifying higher ridership.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title">Visualizations Using Graphs</h5>
+          <hr>
+
+
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="ride_sharing.html">
+                  <img class="panel" src="Fig1_RideSharingBubblePlot.png" alt="Ride Sharing">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="total_rides.html">
+                  <img class="panel active" src="Fig2_RidesbyCityType.png" alt="Total Ride Sharing">
+                </a>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="total_fares.html">
+                  <img class="panel" src="Fig3_TotalFaresbyCityType.png" alt="Total Fares">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="total_drivers.html">
+                  <img class="panel" src="Fig4_TotalDriversbyCityType.png" alt="Total Drivers">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">All rights reserved &copy; Janet C. Garcia, August 17, 2019</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

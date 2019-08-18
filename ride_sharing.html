@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap Visualization Dashboard Bonus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: #696969;" href="p_index.html">Pyber Ride Sharing Analysis</a>
+      <button class="navbar-toggler  border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Analysis
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item active" href="ride_sharing.html">Ride Sharing</a>
+              <a class="dropdown-item" href="total_rides.html">Total Ride Sharing</a>
+              <a class="dropdown-item" href="total_fares.html">Total Fares</a>
+              <a class="dropdown-item" href="total_drivers.html">Total Drivers   </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="graphs.html">Graphs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <!-- Left box  -->
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 class="title">Ride Sharing</h3>
+          <hr>
+          <img src="Fig1_RideSharingBubblePlot.png" alt="Ride Sharing">
+          <br>
+          <br>
+          <p>The Ride Sharing Bubble Plot presents a bubble size-location relationship in which small-sized yellow bubbles (pertaining to rural drivers) are positioned on the table’s left side moving towards the upper left area; the medium-sized blue bubbles (suburban drivers) are floating on the middle portion of the graph; and the big-sized coral bubbles (urban drivers) are established from the middle to the lower right corner of the grid. The smaller the size, the higher the tendency is for bubbles to hover around the lower to upper left region of the table while the bigger the size, the lower the tendency is to move to the upper left zone. In fact, bigger bubbles gravitate on the lower right region of the graph. This correlation implies that in urban areas, where the supply of drivers and the ridership are higher, average fares range from medium to low. On the other side of the spectrum involving rural drivers and ridership, average fares go from medium to high. This validates the law of supply and demand in which more quantity is supplied at a lower price.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+        <!-- Right Box -->
+        <div class="box">
+          <h5 class="title">Visualizations for Analysis</h5>
+          <hr>
+
+
+          <div class="container">
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="ride_sharing.html">
+                  <img class="panel active" src="Fig1_RideSharingBubblePlot.png" alt="Ride Sharing">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="total_rides.html">
+                  <img class="panel" src="Fig2_RidesbyCityType.png" alt="Total Ride Sharing">
+                </a>
+              </div>
+            </div>
+
+            <div class="row" style="padding-bottom: 30px;">
+              <div class="col-6">
+                <a href="total_drivers.html">
+                  <img class="panel" src="Fig3_TotalFaresbyCityType.png" alt="Total Fares">
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="wind_speed.html">
+                  <img class="panel" src="Fig4_TotalDriversbyCityType.png" alt="Total Drivers">
+                </a>
+              </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer">All rights reserved &copy; Janet C. Garcia, August 17, 2019</div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
